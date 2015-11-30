@@ -1,0 +1,9 @@
+name: FlyTimer
+main: com.beastsmc.flytimer.FlyTimer
+version: 0.1
+commands:
+   flytimer:
+      description: CrateKeys command
+      usage: /flytimer <player> <time><s|m|h|d>
+      permission: flytimer.givetimes
+      permission-message: You don't have permission to do that.
