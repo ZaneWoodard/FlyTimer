@@ -35,7 +35,9 @@ public class FlyRemoverTask extends BukkitRunnable {
         p.setFlying(false);
 
         //Teleport to safe block
+        p.setFallDistance(0);
         p.teleport(getSafeLandingLocation(p.getLocation()));
+        p.setFallDistance(0);
         p.sendMessage(ChatColor.RED + "You have been teleported safely to the ground");
 
         FlyTimer.instance.fliers.remove(p.getName().toLowerCase());
